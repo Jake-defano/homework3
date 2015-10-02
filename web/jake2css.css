@@ -12,4 +12,17 @@ body {
     color: white ;
     background-color:#334c80;
     font-size: 12pt;
+    font-family: sans-serif ;
+}
+
+td {
+    background-color: white;
+    color: black ;
+    font-family: sans-serif ; 
+}
+
+h1 {
+    font-size: 20pt;
+    font-family: sans-serif ;
+    
 }

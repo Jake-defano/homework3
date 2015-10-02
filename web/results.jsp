@@ -38,7 +38,7 @@
         double netpay = posttaxpay - posttax ; 
         %>
     <body>
-        <h1>Results</h1>
+        <h1>Salary Info</h1>
         <table border="2" cellpadding="10" bordercolor="white">
             <tbody>
                 <tr>
