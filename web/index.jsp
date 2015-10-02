@@ -9,9 +9,31 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Salary Calculator</title>
+        
+        <link rel ="Stylesheet" href="jake2css.css" type="text/css">
     </head>
+    
+   
     <body>
+        
         <h1>Hello World!</h1>
+        
+        
+               
+        <form action="results.jsp" method="GET">
+            <br> Hours Worked: <input type="text" name="hoursworked"
+             <br />
+            <br> Hourly Pay: <input type="text" name="hourlypay"
+                                  </br>
+             <br> Pre-Tax Deduct: <input type="text" name="pretaxdeduct"
+                                  </br>
+              <br> Post-Tax Deduct: <input type="text" name="posttaxdeduct"
+                                  </br>
+           <input type="submit" value="Submit" />
+           <input type="reset" value="Clear" />
+        </form>
+      
+        
     </body>
 </html>

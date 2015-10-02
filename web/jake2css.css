@@ -8,3 +8,8 @@ and open the template in the editor.
     Author     : jdefano
 */
 
+body {
+    color: white ;
+    background-color:#334c80;
+    font-size: 12pt;
+}
