@@ -17,6 +17,7 @@
     
     <%
         String pretaxdeduct = request.getParameter("pretaxdeduct");
+        String posttaxdeduct = request.getParameter("posttaxdeduct");
         int hoursworked = Integer.parseInt(request.getParameter("hoursworked"));
         int othours = hoursworked - 40 ;
         if (othours < 0)
@@ -32,6 +33,9 @@
             taxrate = 0.18 ;
                     else taxrate = 0.22 ;
         
+        double posttaxpay = (1 - taxrate) * pretaxpayment ;
+        double posttax = Integer.parseInt(request.getParameter("posttaxdeduct"));
+        double netpay = posttaxpay - posttax ; 
         %>
     <body>
         <h1>Results</h1>
@@ -73,6 +77,19 @@
                     <td> Tax Bracket: </td>
                     <td> <%=taxrate      %>  </td>
         </tr>    
+       <tr>
+                    <td> Post Tax Income </td>
+                    <td> <%=posttaxpay    %>  </td>
+        </tr>    
+          <tr>
+                    <td> Post Tax Deductions: </td>
+                    <td> <%=request.getParameter("posttaxdeduct")%>   
+          </tr>
+           <tr>
+                    <td> Net Pay: </td>
+                    <td> <%=netpay%>   
+          </tr>
+          
         </tbody> 
 </table>
             
